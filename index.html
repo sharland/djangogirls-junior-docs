@@ -25,29 +25,53 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section id="front">
 					<h1>Django Girls Junior Tutorial</h1>
 				</section>
-
-				<section>
+				<section id="contents">
 					<h2>Contents</h2>
-					<p>xyz is note to fix something</p>
 					<ol>
-						<li>Welcome</li>
-						<li>Introduction</li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li><a href="#welcome">Welcome</a></li>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#">What will you be learning</a></li>
+						<li><a href="#">Following this tutorial at home</a></li>
+						<li><a href="#">Further resources to help</a></li>
+						<li><a href="#">Setting up your system</a></li>
+						<li><a href="#">Setting up on Mac</a></li>
+						<li><a href="#">Setting up on Windows</a></li>
+						<li><a href="#">Setting up on ChromeBook</a></li>
+						<li><a href="#">Setting up on Linux</a></li>
+						<li><a href="#">How does the Internet work?</a></li>
+						<li><a href="#">Using the command line</a></li>
+						<li><a href="#">Introduction to Python</a></li>
+						<li><a href="#">Introduction to Django</a></li>
+						<li><a href="#">Your first Django project</a></li>
+						<li><a href="#">Working with Django models</a></li>
+						<li><a href="#">Working with Django administration</a></li>
+						<li><a href="#">How to deploy your Django application</a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
 					</ol>
 				</section>
-
 				<section id="welcome">
 					<h2>Welcome</h2>
 		      <p>Welcome to the tutorial for Django girls junior.  This tutorial is aimed at those junior devs who are just getting started on the development road (although we hope that those of any age may get something out of this tutorial as well!).  The full tutorial is found <a href="https://tutorial.djangogirls.org/">here</a> and therefore this one also uses the same CC license below.</p>
 		      <p>Now that you have been using the web for a few years you might be curious about what lies under the surface of a website.  This tutorial will take you on an exciting adventure in learning how to build your own dynamic website.</p>
 		      <p>Remember that along the way you will be doing all sorts of activities.  Things might get a little bit confusing or even go wrong but there is help at hand. We encourage you to keep on no matter what!</p>
 				</section>
-
 				<section id="introduction">
 
 		      <section>
@@ -59,13 +83,12 @@
 					<h2 class="fragment"> NOT</h2>
 					<h2 class="fragment"> MAGIC!</h2>
 					<p class="fragment">xyz - magic picture include</p></section>
-				</section>
-
-				<section id="programming">
-					<p> </p>
-		      <p>Programming is not as hard as you think</p>
-		      <p>In fact it can be quite fun and we want to show that the tools you will learn about can be enjoyable to use and create powerful systems</p>
-		      <p>You do not need to be a super-whiz programmer in order to do this.  You will learn a lot on the way and we also have some suggestions about resources you can use online to help with your journey towards becomming a programmer.</p>
+					<section>
+						<p> </p>
+						<p>Programming is not as hard as you think</p>
+						<p>In fact it can be quite fun and we want to show that the tools you will learn about can be enjoyable to use and create powerful systems</p>
+						<p>You do not need to be a super-whiz programmer in order to do this.  You will learn a lot on the way and we also have some suggestions about resources you can use online to help with your journey towards becomming a programmer.</p>
+					</section>
 				</section>
 				<section id="learning">
 					<h2>What will you be learning?</h2>
@@ -90,16 +113,57 @@
 					<p>Django is written using the Python programming language and therefore editing it will require the use of software which can create Python scripts.</p>
 					<p>The next slides will look at installation instructions for your own machine.  If you are working through this tutorial in a school computer lab it is likely that python should have been already installed.</p>
 				</section>
-				<section id="installationPythonMac">
-					<h2>Installation on macOS</h2>
+				<section id="setupmacos">
+					<section id="setupmacos1">
+					<h2>Installation of Python on macOS</h2>
 					<p><i>Note: Before you install Python on macOS you should ensure that your Mac settings allow for installing packages that aren't from the App store. Go to System Preferences (it's in the Applications folder), click Security and Privacy and then the General tab.  If your "Allow apps downloaded from:" is set to "Mac App store" change it to "Mac App Store and identified developers"</i></p>
 					<p>Go to <a href="http://www.python.org/downloads/mac-osx/">Python.org</a> and select the latest version 3 release for Python.  This will download a pkg file to your Mac.  Once it is downloaded double click this file to start installation.  A new Python application will be added to your applications folder on your Mac</p>
+					</section>
+					<section id="djangoinstall1">
+						<h2>How to install and setup Django</h2>
+						<p>Navigate to a terminal command prompt and enter the following</p>
+							<pre><code class="bash">pip install --upgrade pip</code></pre>
+					</section>
+					<section id="djangoinstall2">
+						<h2>Installing Django itself</h2>
+						<p>Now enter the following command, again at the command prompt, to install django.  See the official website <a href="https://www.djangoproject.com/download/">here</a> for the latest version number.</p>
+						<p><pre><code class="bash">pip install Django==1.11.4</code></pre></p>
+
+					</section>
+					<section id="ide1">
+						<h2>Code editor</h2>
+						<p>As well as using the CLI you will also need to use a code editor to write your scripts.  If you are doing this tutorial at home let's take a look on the next slide below at some recommended editors.  Remember that if you are doing this on a school network you will likely have a code editor already installed which your instructor will direct you towards.</p>
+					</section>
+					<section id="ide2">
+						<h2>Some useful code editors</h2>
+						<table>
+							<thead>
+								<tr>
+									<td>Name</td><td>Notes</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Atom</td><td>A very customisable code editor available for multiple systems.  Used to write this guide</td>
+								</tr>
+								<tr>
+									<td>Geny</td><td>This is another open-source and customisable code editor available for a number of different systems</td>
+								</tr>
+								<tr>
+									<td>Notepad++</td><td>A good code editor for use on Windows systems.  Also quite configurable.</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
 				</section>
-				<section id="installationwin">
+				<section id="setupwin">
 					<h2>Installation Windows</h2>
 				</section>
-				<section id="installationchr">
+				<section id="setupchrome">
 					<h2>Installation Chromebook</h2>
+				</section>
+				<section id="setuplinux">
+					<h2>Installation Linux</h2>
 				</section>
 				<section id="howinternetworks">
 					<section id="howinternetworks1"><h2>How does the internet work?</h2>
@@ -167,33 +231,6 @@
 						<p>Instructions for opening Linux CLI</p>
 					</section>
 				</section>
-				<section id="ide">
-					<section id="ide1">
-						<h2>Code editor</h2>
-						<p>As well as using the CLI you will also need to use a code editor to write your scripts.  If you are doing this tutorial at home let's take a look on the next slide below at some recommended editors.  Remember that if you are doing this on a school network you will likely have a code editor already installed which your instructor will direct you towards.</p>
-					</section>
-					<section id="ide2">
-						<h2>Some useful code editors</h2>
-						<table>
-							<thead>
-								<tr>
-									<td>Name</td><td>Notes</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Atom</td><td>A very customisable code editor available for multiple systems.  Used to write this guide</td>
-								</tr>
-								<tr>
-									<td>Geny</td><td>This is another open-source and customisable code editor available for a number of different systems</td>
-								</tr>
-								<tr>
-									<td>Notepad++</td><td>A good code editor for use on Windows systems.  Also quite configurable.</td>
-								</tr>
-							</tbody>
-						</table>
-					</section>
-				</section>
 				<section id="pythonintro">
 					<section id="pythonintro1">
 						<h2>Introduction to Python</h2>
@@ -212,17 +249,69 @@
 						</code></pre>
 					</section>
 				</section>
-				<section id="installationDjango">
-					<section id="djangoinstall1">
-						<h2>How to install and setup Django</h2>
+				<section id="djangointro">
+					<section id ="djangointro1">
+						<h2>What is Django?</h2>
+						<p>Django (/ˈdʒæŋɡoʊ/ jang-goh) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.</p>
+						<p>When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.</p>
+					</section>
+					<section id="djangointro2">
+						<h2>Why Django</h2>
+						<p>Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.</p>
+						<p>Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.</p>
+					</section>
+					<section id="djangointro3">
+						<h2>Why do you need a framework?</h2>
+						<p>To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.</p>
+						<p>Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.</p>
+					</section>
+					<section id="djangointro4">
+						<h2>What happens when someone requests a website from your server?</h2>
+						<p>When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's urlresolver (note that a website address is called a URL – Uniform Resource Locator – so the name urlresolver makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called view).</p>
+						<p>Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!</p>
+					</section>
+					<section id="djangointro5">
+						<p>In the view function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The view can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the view generates a response and Django can send it to the user's web browser.</p>
+						<p>Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.</p>
+						<p>So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!</p>
 					</section>
 				</section>
-				<section id="djangointro">
-					<h2>What is Django?</h2>
-				</section>
-
 				<section id="firstdjango">
-					<h2>Your first Django project!</h2>
+					<section id="firstdjango1">
+						<h2>Your first Django project!</h2>
+						<p>To begin with we are going to setup a directory for use with this project.  I would suggest that you setup a folder called <b>django_projects</b> and then inside this setup a folder called <b>first_project</b>.  Once you have done this setup the django project by entering the following at the command line.  Eventually this will return to the command prompt if there are no issues.</p>
+						<table>
+							<tr><td>Windows</td><td><pre><code class="bash"></code></td></tr>
+							<tr><td>macOS</td><td><pre><code class="bash">django-admin startproject mysite .</code></pre></td></tr>
+							<tr><td>Linux</td><td><pre><code class="bash"></code></pre></td></tr>
+						</table>
+					</section>
+					<section id="firstdjango2">
+						<h2>The first files</h2>
+						<p>The previous command you issued will have created the following file and folder structure.  Please don't delete anything now!</p>
+						<ul>
+							<li>manage.py</li>
+							<li>mysite (folder)</li>
+							<ul>
+								<li>settings.py</li>
+								<li>urls.py</li>
+								<li>wsgi.py</li>
+								<li>__init__.py</li>
+							</ul>
+						</ul>
+					</section>
+					<section id="firstdjango3">
+						<h2>Making some first changes in settings</h2>
+						<p>Although we have been using the command line now could be a good time to start using the code editor you downloaded.  Open the code editor and then open the settings.py file.</p>
+					</section>
+					<section id="firstdjango4">
+						<h2>Changing the timezone</h2>
+						<p>It would be nice to have the correct timezone for our website.  Go to <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">Wikipedia's list of time zones</a> and copy your relevant time zone (TZ) (e.g. Europe/Berlin ).</p>
+						<p>In settings.py , find the line that contains TIME_ZONE and modify it to choose your own timezone. For example:</p>
+						<pre><code class="python">
+							TIME_ZONE = 'Europe/Berlin'
+						</code></pre>
+					</section>
 				</section>
 				<section id="djangomodels">
 					<h2>Django Models</h2>
@@ -263,7 +352,6 @@
 				<section id="whatsnext">
 					<h2>What's next?</h2>
 				</section>
-
 			</div>
 		</div>
 
