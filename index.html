@@ -309,15 +309,73 @@
 						<p>It would be nice to have the correct timezone for our website.  Go to <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">Wikipedia's list of time zones</a> and copy your relevant time zone (TZ) (e.g. Europe/Berlin ).</p>
 						<p>In settings.py , find the line that contains TIME_ZONE and modify it to choose your own timezone. For example:</p>
 						<pre><code class="python">
-							TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Europe/Berlin'
 						</code></pre>
+					</section>
+					<section id="firstdjango5">
+						<h2>Adding a path for static files</h2>
+						<p>You will also need to add a path for static files (We'll find out about static files and CSS later in the tutorial).  Go down to the end of the file, and just underneath the STATIC_URL entry, add a new one called STATIC_ROOT :</p>
+						<pre><code class="python">
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+						</code></pre>
+					</section>
+					<section id="firstdjango6">
+						<h2>Validating the host</h2>
+						<p>Before we host the application on a site such as <a href="http://pythonanywhere.com">pythonanywhere.com</a> when testing it we will be using our local host (in other words the computer you are working on).  The following setting does not need to be changed now but it is good to know where it is for future reference.</p>
+						<pre><code class="python">
+DEBUG = True	#Do not leave this set to True when you deploy your application
+ALLOWED_HOSTS = []
+						</code></pre>
+					</section>
+					<section id="firstdjango7">
+						<h2>Setting up a database</h2>
+						<p>Most modern websites which have some functionality will be using a database behind the scenes.  We are going to use the default system <b>sqlite3</b>.  This is already available in your settings file using the code below (so you do not need to change anything at this point)</p>
+						<pre><code class="python">
+DATABASES = {
+		'default': {
+				'ENGINE': 'django.db.backends.sqlite3',
+				'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+			}
+}
+						</code></pre>
+					</section>
+					<section id="firstdjango8">
+						<p>We do though need to setup the database itself which our site is going to use.  In your console you need to be in the directory which holds the manage.py file.  Run the following command.  This will complete the setup and we will be ready to run the webserver!  Remember that we have setup django for python3 - if not drop the 3.</p>
+						<pre><code class="bash">
+python3 manage.py migrate
+						</code></pre>
+					</section>
+					<section id="firstdjango9">
+						<h2>Starting the web server</h2>
+						<p>You again need to use the terminal and be in the same directory as the manage.py file.  Run the following command:</p>
+						<pre><code class="python">
+python3 manage.py runserver
+						</code></pre>
+					</section>
+					<section id="firstdjango10">
+						<h2>Testing that it worked</h2>
+						<p>To see whether your django server is now running go to a decent browser like Chrome or Safari and enter the following address in the URL bar.  If it works you will see the following in your browser.</p>
+						<!-- will need to add chrome and windows execute commands -->
+						<pre><code>
+http://127.0.0.1:8000/
+						</code></pre>
+						<img src="https://tutorial.djangogirls.org/en/django_start_project/images/it_worked2.png" />
+					</section>
+					<section id="firstdjango11">
+						<h2>What the terminal is doing</h2>
+						<p>Whilst the webserver is running the terminal will not enable you to enter any new commands.  Instead it will show you output from what is taking place with the webserver.</p>
+						<p>To type additional commands in the terminal you will need to open a new window.  To stop the test web server from running you would need to close it by using the keyboard shortcut ctrl-c.</p>
+						<p>Time to now move onto the next section on Django models.</p>
 					</section>
 				</section>
 				<section id="djangomodels">
 					<h2>Django Models</h2>
+					<p>We now need to create something which will store the blog posts for our blog</p>
 				</section>
 				<section id="djangoadmin">
 					<h2>Django Admin</h2>
+
 				</section>
 				<section id="deploy">
 					<h2>Deploy!</h2>
