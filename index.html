@@ -370,8 +370,46 @@ http://127.0.0.1:8000/
 					</section>
 				</section>
 				<section id="djangomodels">
-					<h2>Django Models</h2>
-					<p>We now need to create something which will store the blog posts for our blog</p>
+					<section id="djangomod1">
+						<h2>Django Models</h2>
+						<p>We now need to create something which will store the blog posts for our blog.  In order to do this we will need to talk about something called objects.</p>
+					</section>
+					<section id="djangomod2">
+						<h2>Objects</h2>
+						<p>There is a concept in programming known as 'Object Oriented Programming' or OOP</p>
+						<p>In learning your first bits of programming you will likely have been using procedural programming.  This breaks programming into functions using variables and scope.</p>
+						<p>OOP instead uses the concept of a collection of properties and actions</p>
+					</section>
+					<section id="djangomod3">
+						<h2>OOP properties and actions</h2>
+						<p>The best way to understand OOP properties and actions is to think of a dog.</p>
+						<p>If we wanted to create the object 'dog' we could assign some properties to it such as: number of legs, tail or not, colour of fur, age and mood.</p>
+						<p>A dog might have actions such as: lick, dig, bark, run and eat.  In the case of eat we might give it some DogFood which would be a separate object with its own properties such as taste.</p>
+					</section>
+					<section id="djangomod4">
+						<h2>Descrbing OOP properties and methods</h2>
+						<div class="left">
+							<p>Using the previous descriptions of how a dog works we could create the list of properties and actions (also known as methods) which you see on the right.</p>
+							<p>Note that the methods are written using brackets at the end - this indicates that it can receive additional data</p>
+						</div>
+						<div class="right">
+							<pre><code>
+Dog
+--------
+colour
+mood
+numLegs
+tail
+age
+owner
+lick()
+dig()
+bark()
+run()
+eat(dogFood)
+							</code></pre>
+						</div>
+					</section>
 				</section>
 				<section id="djangoadmin">
 					<h2>Django Admin</h2>
