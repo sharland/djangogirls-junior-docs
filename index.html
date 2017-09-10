@@ -391,6 +391,7 @@ http://127.0.0.1:8000/
 						<div class="left">
 							<p>Using the previous descriptions of how a dog works we could create the list of properties and actions (also known as methods) which you see on the right.</p>
 							<p>Note that the methods are written using brackets at the end - this indicates that it can receive additional data</p>
+							<p>DogFood could be a separate object with its own properties such as taste.</p>
 						</div>
 						<div class="right">
 							<pre><code>
@@ -409,6 +410,35 @@ run()
 eat(dogFood)
 							</code></pre>
 						</div>
+					</section>
+					<section id="djangomod5">
+						<h2>Using objects</h2>
+						<div class="left">
+							<p>The idea is to therefore use objects to describe real life things using their properties and actions.</p>
+							<p>We will apply this to our blog by modelling each blog post as an object with its own properties and a publish method.  Take a look at the list to the right.</p>
+						</div>
+						<div class="right">
+							<pre><code>
+Post
+--------
+title
+text
+author
+created_date
+published_date
+publish()
+							</code></pre>
+						</div>
+					</section>
+					<section id="djangomod6">
+						<h2>Moving onto models</h2>
+						<p>Now that we know what the object properties are we can use these to create a Django model to represent our blog post.</p>
+						<p>A model in Django is a special kind of object.  It is stored in the database.</p>
+						<p>The database is where all data about users, blog posts etc is stored.  We will be using the default database sqlite to store our data.</p>
+						<p>A model in the database as a spreadsheet with columns (fields) and rows (data)</p>
+					</section>
+					<section id="djangomod7">
+						<h2>
 					</section>
 				</section>
 				<section id="djangoadmin">
